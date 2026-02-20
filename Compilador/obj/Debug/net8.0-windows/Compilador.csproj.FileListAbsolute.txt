@@ -32,3 +32,5 @@ C:\CodeProjects\Docente\UES\Compiladores\CompiladorGUI\Compilador\obj\Debug\net8
 C:\CodeProjects\Docente\UES\Compiladores\CompiladorGUI\Compilador\obj\Debug\net8.0-windows\Compilador.pdb
 C:\CodeProjects\Docente\UES\Compiladores\CompiladorGUI\Compilador\obj\Debug\net8.0-windows\Compilador.genruntimeconfig.cache
 C:\CodeProjects\Docente\UES\Compiladores\CompiladorGUI\Compilador\obj\Debug\net8.0-windows\ref\Compilador.dll
+C:\CodeProjects\Docente\UES\Compiladores\CompiladorGUI\Compilador\obj\Debug\net8.0-windows\Compilador.UI.FORMS.FrmCompilador.resources
+C:\CodeProjects\Docente\UES\Compiladores\CompiladorGUI\Compilador\obj\Debug\net8.0-windows\Compilador.sourcelink.json
