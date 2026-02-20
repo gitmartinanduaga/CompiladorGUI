@@ -90,7 +90,7 @@ namespace Compilador.UI.Forms
             }
         }
 
-     
+
         private void BtnTema_Click(object sender, EventArgs e)
         {
             isDarkTheme = !isDarkTheme;
@@ -105,6 +105,13 @@ namespace Compilador.UI.Forms
         {
             txtEditor.BackColor = Color.White;
             txtEditor.ForeColor = Color.Black;
+            txtTokens.BackColor = Color.White;
+            txtTokens.ForeColor = Color.Black;
+            txtEstatus.BackColor = Color.White;
+            txtEstatus.ForeColor = Color.Black;
+            gridSimbolos.BackgroundColor = Color.White;
+            gridSimbolos.DefaultCellStyle.BackColor = Color.White;
+            gridSimbolos.DefaultCellStyle.ForeColor = Color.Black;
             pnlLineNumbers.BackColor = Color.FromArgb(245, 245, 245);
         }
 
@@ -112,6 +119,13 @@ namespace Compilador.UI.Forms
         {
             txtEditor.BackColor = Color.FromArgb(30, 30, 30);
             txtEditor.ForeColor = Color.Gainsboro;
+            txtTokens.BackColor = Color.FromArgb(30, 30, 30);
+            txtTokens.ForeColor = Color.Gainsboro;
+            txtEstatus.BackColor = Color.FromArgb(30, 30, 30);
+            txtEstatus.ForeColor = Color.Gainsboro;
+            gridSimbolos.BackgroundColor = Color.FromArgb(30, 30, 30);
+            gridSimbolos.DefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+            gridSimbolos.DefaultCellStyle.ForeColor = Color.Gainsboro;
             pnlLineNumbers.BackColor = Color.FromArgb(45, 45, 48);
         }
 
@@ -181,5 +195,7 @@ namespace Compilador.UI.Forms
                 MessageBox.Show("Error al guardar el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+       
     }
 }

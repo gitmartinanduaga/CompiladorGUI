@@ -53,58 +53,65 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnNuevo, btnAbrir, btnGuardar, btnCompilar, btnTema, btnSalir });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(882, 27);
+            toolStrip1.Size = new Size(983, 51);
             toolStrip1.TabIndex = 1;
             // 
             // btnNuevo
             // 
+            btnNuevo.Image = Properties.Resources._new;
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(56, 24);
+            btnNuevo.Size = new Size(56, 48);
             btnNuevo.Text = "Nuevo";
             btnNuevo.TextImageRelation = TextImageRelation.ImageAboveText;
             btnNuevo.Click += btnNuevo_Click;
             // 
             // btnAbrir
             // 
+            btnAbrir.Image = Properties.Resources.open;
             btnAbrir.Name = "btnAbrir";
-            btnAbrir.Size = new Size(46, 24);
+            btnAbrir.Size = new Size(46, 48);
             btnAbrir.Text = "Abrir";
             btnAbrir.TextImageRelation = TextImageRelation.ImageAboveText;
             btnAbrir.Click += btnAbrir_Click;
             // 
             // btnGuardar
             // 
+            btnGuardar.Image = Properties.Resources.save;
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(66, 24);
+            btnGuardar.Size = new Size(66, 48);
             btnGuardar.Text = "Guardar";
             btnGuardar.TextImageRelation = TextImageRelation.ImageAboveText;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCompilar
             // 
+            btnCompilar.Image = Properties.Resources.compilar;
             btnCompilar.Name = "btnCompilar";
-            btnCompilar.Size = new Size(74, 24);
+            btnCompilar.Size = new Size(74, 48);
             btnCompilar.Text = "Compilar";
             btnCompilar.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
             // btnTema
             // 
+            btnTema.Image = Properties.Resources.icon_nuevo;
             btnTema.Name = "btnTema";
-            btnTema.Size = new Size(49, 24);
+            btnTema.Size = new Size(49, 48);
             btnTema.Text = "Tema";
             btnTema.TextImageRelation = TextImageRelation.ImageAboveText;
+            //btnTema.Click += BtnTema_Click;
             // 
             // btnSalir
             // 
+            btnSalir.Image = Properties.Resources.exit;
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(42, 24);
+            btnSalir.Size = new Size(42, 48);
             btnSalir.Text = "Salir";
             btnSalir.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
             // splitMain
             // 
             splitMain.Dock = DockStyle.Fill;
-            splitMain.Location = new Point(0, 27);
+            splitMain.Location = new Point(0, 51);
             splitMain.Name = "splitMain";
             splitMain.Orientation = Orientation.Horizontal;
             // 
@@ -115,8 +122,8 @@
             // splitMain.Panel2
             // 
             splitMain.Panel2.Controls.Add(splitBottom);
-            splitMain.Size = new Size(882, 505);
-            splitMain.SplitterDistance = 358;
+            splitMain.Size = new Size(983, 589);
+            splitMain.SplitterDistance = 417;
             splitMain.TabIndex = 0;
             // 
             // splitEditor
@@ -128,12 +135,13 @@
             // splitEditor.Panel2
             // 
             splitEditor.Panel2.Controls.Add(txtTokens);
-            splitEditor.Size = new Size(882, 358);
-            splitEditor.SplitterDistance = 711;
+            splitEditor.Size = new Size(983, 417);
+            splitEditor.SplitterDistance = 792;
             splitEditor.TabIndex = 0;
             // 
             // txtTokens
             // 
+            txtTokens.BackColor = SystemColors.Control;
             txtTokens.Dock = DockStyle.Fill;
             txtTokens.Font = new Font("Consolas", 10F);
             txtTokens.Location = new Point(0, 0);
@@ -141,7 +149,7 @@
             txtTokens.Name = "txtTokens";
             txtTokens.ReadOnly = true;
             txtTokens.ScrollBars = ScrollBars.Vertical;
-            txtTokens.Size = new Size(167, 358);
+            txtTokens.Size = new Size(187, 417);
             txtTokens.TabIndex = 0;
             txtTokens.Text = "Listado de tokens";
             // 
@@ -158,8 +166,8 @@
             // splitBottom.Panel2
             // 
             splitBottom.Panel2.Controls.Add(gridSimbolos);
-            splitBottom.Size = new Size(882, 143);
-            splitBottom.SplitterDistance = 711;
+            splitBottom.Size = new Size(983, 168);
+            splitBottom.SplitterDistance = 792;
             splitBottom.TabIndex = 0;
             // 
             // txtEstatus
@@ -171,7 +179,7 @@
             txtEstatus.Name = "txtEstatus";
             txtEstatus.ReadOnly = true;
             txtEstatus.ScrollBars = ScrollBars.Vertical;
-            txtEstatus.Size = new Size(711, 143);
+            txtEstatus.Size = new Size(792, 168);
             txtEstatus.TabIndex = 0;
             txtEstatus.Text = "Estatus del compilador";
             // 
@@ -186,7 +194,7 @@
             gridSimbolos.ReadOnly = true;
             gridSimbolos.RowHeadersVisible = false;
             gridSimbolos.RowHeadersWidth = 51;
-            gridSimbolos.Size = new Size(167, 143);
+            gridSimbolos.Size = new Size(187, 168);
             gridSimbolos.TabIndex = 0;
             // 
             // openFileDialog1
@@ -195,7 +203,7 @@
             // 
             // FrmCompilador
             // 
-            ClientSize = new Size(882, 532);
+            ClientSize = new Size(983, 640);
             Controls.Add(splitMain);
             Controls.Add(toolStrip1);
             Name = "FrmCompilador";
